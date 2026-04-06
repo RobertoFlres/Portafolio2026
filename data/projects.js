@@ -61,42 +61,6 @@ const projects = [
     impactOffset: "mt-32",
     impact: "El rediseño le dio a la marca una imagen actual y profesional que reforzó la confianza de sus clientes existentes y atrajo nuevos prospectos.",
   },
-  {
-    slug: "proyecto-5",
-    title: "Proyecto 5",
-    category: "Diseño digital · Redes",
-    description: "Estrategia visual y contenido para redes sociales de una marca emergente.",
-    longDescription: "Se desarrolló un sistema visual adaptado a redes sociales que permitiera a la marca comunicar con claridad y coherencia. Se definieron plantillas, estilos fotográficos y lineamientos de contenido para mantener una presencia digital profesional y atractiva.",
-    process: "Se comenzó con un análisis de la presencia digital actual y la competencia. Se definió una grilla de contenido, se diseñaron plantillas editables para diferentes formatos y se establecieron lineamientos de fotografía y tipografía para mantener coherencia visual en cada publicación.",
-    impact: "La presencia digital de la marca se transformó por completo, logrando coherencia visual y un crecimiento orgánico notable en engagement y seguidores.",
-  },
-  {
-    slug: "proyecto-6",
-    title: "Proyecto 6",
-    category: "Branding · Web",
-    description: "Identidad de marca y sitio web para un estudio creativo independiente.",
-    longDescription: "Desde el concepto de marca hasta el diseño y desarrollo del sitio web, este proyecto fue pensado para posicionar al estudio como referente creativo en su industria. Se trabajó en la narrativa visual, la estructura del sitio y cada detalle de interacción.",
-    process: "El proceso fue colaborativo desde el inicio. Se definió la estrategia de marca junto al cliente, se diseñó la identidad visual y en paralelo se trabajó en la estructura y diseño del sitio web. Se priorizó la experiencia de navegación y la presentación del portafolio como herramienta de conversión.",
-    impact: "El estudio pasó de ser invisible online a posicionarse como referente creativo en su nicho, con un sitio que funciona como su mejor carta de presentación.",
-  },
-  {
-    slug: "proyecto-7",
-    title: "Proyecto 7",
-    category: "UI · Diseño de producto",
-    description: "Diseño de producto digital para una aplicación de bienestar y productividad.",
-    longDescription: "Se diseñó la interfaz completa de una aplicación móvil enfocada en hábitos y bienestar. El proceso incluyó investigación de usuario, wireframes, diseño de componentes y prototipos interactivos pensados para una experiencia fluida e intuitiva.",
-    process: "Se realizaron entrevistas con usuarios potenciales para entender sus necesidades. Se mapearon los flujos principales, se diseñó un sistema de diseño con componentes modulares y se iteró con prototipos clickeables hasta llegar a una versión final validada con usuarios reales.",
-    impact: "La aplicación logró una adopción rápida gracias a su interfaz intuitiva y un flujo de uso que los usuarios describieron como natural y sin fricción.",
-  },
-  {
-    slug: "proyecto-8",
-    title: "Proyecto 8",
-    category: "Identidad visual",
-    description: "Sistema visual para una marca gastronómica con identidad artesanal.",
-    longDescription: "La marca necesitaba una identidad que reflejara su proceso artesanal y su compromiso con la calidad. Se diseñó un sistema visual cálido y auténtico que abarcó logo, tipografía, packaging y ambientación del espacio físico.",
-    process: "Se visitó el espacio físico y se conoció de cerca el proceso de producción para capturar la esencia de la marca. Se exploraron referencias visuales artesanales y contemporáneas, se diseñó el logo y el sistema tipográfico, y se aplicó a packaging, menú, señalética y ambientación del local.",
-    impact: "La identidad artesanal conectó emocionalmente con los clientes y elevó la percepción de calidad del producto, reflejando el cuidado que hay detrás de cada pieza.",
-  },
 ];
 
 export default projects;
