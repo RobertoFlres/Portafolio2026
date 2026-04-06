@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="w-full bg-[#141414] pb-10 overflow-hidden">
@@ -11,9 +13,9 @@ const Footer = () => {
           <div>
             <p className="text-[#aba8a3] mb-2">Pages</p>
             <ul className="space-y-1">
-              <li><a href="/work" className="hover:text-white transition-colors">Proyectos</a></li>
-              <li><a href="/#features" className="hover:text-white transition-colors">Servicios</a></li>
-              <li><a href="/#about" className="hover:text-white transition-colors">About Me</a></li>
+              <li><Link href="/work" className="hover:text-white transition-colors">Proyectos</Link></li>
+              <li><Link href="/#features" className="hover:text-white transition-colors">Servicios</Link></li>
+              <li><Link href="/#about" className="hover:text-white transition-colors">About Me</Link></li>
             </ul>
           </div>
           <div>
