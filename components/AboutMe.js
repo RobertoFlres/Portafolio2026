@@ -17,10 +17,10 @@ const AboutMe = () => {
 
         {/* Quién soy */}
         <div className="mt-16 md:mt-24 max-w-lg">
-          <span className="font-[Montserrat] text-[#aba8a3] text-xs tracking-[0.3em] uppercase block mb-6">
+          <span className="font-montserrat text-[#aba8a3] text-xs tracking-[0.3em] uppercase block mb-6">
             ( QUIÉN SOY )
           </span>
-          <p className="font-[Montserrat] font-light text-white text-sm md:text-base leading-relaxed">
+          <p className="font-montserrat font-light text-white text-sm md:text-base leading-relaxed">
             Soy Roberto Flores, diseñador de branding
             basado en Chihuahua. Trabajo con startups,
             negocios locales y marcas en crecimiento que
@@ -32,10 +32,10 @@ const AboutMe = () => {
         <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
 
           <div>
-            <span className="font-[Montserrat] text-[#aba8a3] text-xs tracking-[0.3em] uppercase block mb-6">
+            <span className="font-montserrat text-[#aba8a3] text-xs tracking-[0.3em] uppercase block mb-6">
               ( POR QUÉ TRABAJAR CONMIGO )
             </span>
-            <p className="font-[Montserrat] font-light text-white text-sm md:text-base leading-relaxed">
+            <p className="font-montserrat font-light text-white text-sm md:text-base leading-relaxed">
               No me interesa solo hacer algo bonito.
               Me interesa entender qué quiere lograr tu
               proyecto, a quién le habla y qué problema
@@ -49,10 +49,10 @@ const AboutMe = () => {
           </div>
 
           <div>
-            <span className="font-[Montserrat] text-[#aba8a3] text-xs tracking-[0.3em] uppercase block mb-6">
+            <span className="font-montserrat text-[#aba8a3] text-xs tracking-[0.3em] uppercase block mb-6">
               ( CUANDO NO ESTOY DISEÑANDO )
             </span>
-            <p className="font-[Montserrat] font-light text-white text-sm md:text-base leading-relaxed">
+            <p className="font-montserrat font-light text-white text-sm md:text-base leading-relaxed">
               Sigo construyendo. Participo en la organización
               de eventos, colaboro en proyectos creativos y
               me muevo en entornos donde se están haciendo

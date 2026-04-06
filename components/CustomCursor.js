@@ -8,6 +8,9 @@ const CustomCursor = () => {
   const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
+    const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+    if (isTouchDevice) return;
+
     const cursor = cursorRef.current;
     let mouseX = 0;
     let mouseY = 0;
@@ -59,13 +62,13 @@ const CustomCursor = () => {
   return (
     <div
       ref={cursorRef}
-      className={`fixed top-0 left-0 rounded-full pointer-events-none z-[9999] mix-blend-difference bg-white -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transition-[width,height] duration-300 ease-out ${
+      className={`fixed top-0 left-0 rounded-full pointer-events-none z-[9999] mix-blend-difference bg-white -translate-x-1/2 -translate-y-1/2 items-center justify-center transition-[width,height] duration-300 ease-out hidden md:flex ${
         hovered ? "w-24 h-24" : "w-10 h-10"
       }`}
     >
       <span
         ref={textRef}
-        className={`text-black text-xs font-[Montserrat] font-semibold uppercase transition-opacity duration-300 ${
+        className={`text-black text-xs font-montserrat font-semibold uppercase transition-opacity duration-300 ${
           hovered ? "opacity-100" : "opacity-0"
         }`}
       >

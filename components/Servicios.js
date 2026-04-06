@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Servicios = () => {
   return (
     <section
@@ -9,17 +11,17 @@ const Servicios = () => {
         <h2 className="font-[RealHeadWeb04-Medium] text-white text-4xl md:text-5xl lg:text-7xl tracking-tight text-left uppercase leading-tight">
           CÓMO PUEDO<br />AYUDARTE
         </h2>
-        <p className="font-[Montserrat] font-light text-white text-sm lg:text-base uppercase leading-snug text-left md:mr-[10vw] md:mt-20">
+        <p className="font-montserrat font-light text-white text-sm lg:text-base uppercase leading-snug text-left md:mr-[10vw] md:mt-20">
           UNA BUENA MARCA NO SE VE BONITA.<br />SE SIENTE VERDADERA.
         </p>
       </div>
 
       <div className="px-4 md:px-8 mt-16 md:mt-24">
         {[
-          { label: "NAMING · LOGO · SISTEMA VISUAL", title: "IDENTIDAD DE MARCA" },
-          { label: "ESTRATEGIA · IDENTIDAD · APLICACIONES", title: "BRANDING COMPLETO" },
-          { label: "REDES SOCIALES · PIEZAS GRÁFICAS · CONTENIDO", title: "DISEÑO DIGITAL" },
-          { label: "INTERFACES · SITIOS WEB · DISEÑO DE PRODUCTO", title: "UI & WEB" },
+          { label: "NAMING · LOGO · SISTEMA VISUAL", title: "IDENTIDAD DE MARCA", image: "/images/portadap4.jpg" },
+          { label: "ESTRATEGIA · IDENTIDAD · APLICACIONES", title: "BRANDING COMPLETO", image: "/images/portadap3.jpg" },
+          { label: "REDES SOCIALES · PIEZAS GRÁFICAS · CONTENIDO", title: "DISEÑO DIGITAL", image: "/images/portadap1.png" },
+          { label: "INTERFACES · SITIOS WEB · DISEÑO DE PRODUCTO", title: "UI & WEB", image: "/images/portadap2.png" },
         ].map((item, i) => (
           <div
             key={i}
@@ -28,14 +30,21 @@ const Servicios = () => {
             <div className="absolute bottom-0 left-0 w-full h-[1px] bg-[#333]" />
             <div className="absolute bottom-0 left-0 h-[1px] bg-white w-0 group-hover:w-full transition-all duration-700 ease-out" />
             <div>
-              <span className="font-[Montserrat] text-[#aba8a3] text-[10px] md:text-xs tracking-widest uppercase">
+              <span className="font-montserrat text-[#aba8a3] text-[10px] md:text-xs tracking-widest uppercase">
                 {item.label}
               </span>
               <h3 className="font-[RealHeadPro-SemiLight] text-white text-2xl md:text-4xl lg:text-6xl uppercase mt-2">
                 {item.title}
               </h3>
             </div>
-            <div className="absolute bottom-[1px] right-[15%] w-64 h-0 bg-[#2a2a2a] group-hover:h-[80%] transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] origin-bottom hidden md:block" />
+            <div className="absolute bottom-[1px] right-[15%] w-64 h-0 group-hover:h-[80%] transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] origin-bottom hidden md:block overflow-hidden">
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+              />
+            </div>
             <span className="text-white text-xl md:text-2xl lg:text-3xl relative z-10 inline-block transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-4">→</span>
           </div>
         ))}

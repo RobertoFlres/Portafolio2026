@@ -22,13 +22,13 @@ export default async function ProjectPage({ params }) {
       <main className="bg-[#141414] text-[#ece8e0] min-h-screen pt-20">
         <div className="max-w-7xl mx-auto px-8 py-16">
           <div className="max-w-2xl">
-            <span className="font-[Montserrat] text-[#aba8a3] text-xs tracking-[0.3em] uppercase block mb-4">
+            <span className="font-montserrat text-[#aba8a3] text-xs tracking-[0.3em] uppercase block mb-4">
               {project.category}
             </span>
             <h1 className="font-[RealHeadPro-SemiLight] text-white text-6xl md:text-9xl uppercase">
               {project.title}
             </h1>
-            <p className="font-[Montserrat] font-light text-[#aba8a3] text-sm md:text-base uppercase tracking-wide mt-6 leading-relaxed">
+            <p className="font-montserrat font-light text-[#aba8a3] text-sm md:text-base uppercase tracking-wide mt-6 leading-relaxed">
               {project.description}
             </p>
           </div>
@@ -37,13 +37,13 @@ export default async function ProjectPage({ params }) {
           ) : (
             <div className="mt-16 w-full aspect-[16/9] bg-[#2a2a2a]" />
           )}
-          <p className="font-[Montserrat] font-light text-white text-base md:text-xl uppercase tracking-wide mt-8 max-w-3xl leading-relaxed">
+          <p className="font-montserrat font-light text-white text-base md:text-xl uppercase tracking-wide mt-8 max-w-3xl leading-relaxed">
             {project.longDescription}
           </p>
           <h2 className="font-[RealHeadPro-SemiLight] text-white text-5xl md:text-8xl uppercase mt-20">
             proceso
           </h2>
-          <p className="font-[Montserrat] font-light text-white text-base md:text-xl uppercase tracking-wide mt-8 max-w-5xl leading-relaxed line-clamp-3">
+          <p className="font-montserrat font-light text-white text-base md:text-xl uppercase tracking-wide mt-8 max-w-5xl leading-relaxed line-clamp-3">
             {project.process}
           </p>
           <div className="mt-16 flex flex-col md:flex-row gap-8 md:items-start">
@@ -53,7 +53,7 @@ export default async function ProjectPage({ params }) {
               <div className="w-full md:w-[45%] aspect-square bg-[#2a2a2a] shrink-0" />
             )}
             <div className="w-full md:flex-1 flex flex-col gap-8">
-              <p className="font-[Montserrat] font-light text-white text-sm md:text-base uppercase tracking-wide leading-relaxed flex-1">
+              <p className="font-montserrat font-light text-white text-sm md:text-base uppercase tracking-wide leading-relaxed flex-1">
                 {project.processDetail || project.longDescription}
               </p>
               {project.image3 ? (
@@ -68,7 +68,7 @@ export default async function ProjectPage({ params }) {
               <h2 className="font-[RealHeadPro-SemiLight] text-white text-5xl md:text-8xl uppercase">
                 impacto
               </h2>
-              <p className="font-[Montserrat] font-light text-white text-sm md:text-base uppercase tracking-wide leading-relaxed mt-6 max-w-md">
+              <p className="font-montserrat font-light text-white text-sm md:text-base uppercase tracking-wide leading-relaxed mt-6 max-w-md">
                 {project.impact}
               </p>
             </div>

@@ -52,6 +52,7 @@
 
 @theme {
   --font-display: "Satoshi", "sans-serif";
+  --font-montserrat: var(--font-montserrat), "Montserrat", sans-serif;
   
   --animate-shimmer: shimmer 3s ease-out infinite alternate;
   --animate-opacity: opacity 0.25s ease-in-out;

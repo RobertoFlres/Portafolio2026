@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import { getSEOTags } from "@/libs/seo";
 import ClientLayout from "@/components/LayoutClient";
 import CustomCursor from "@/components/CustomCursor";
@@ -6,6 +6,11 @@ import config from "@/config";
 import "./globals.css";
 
 const font = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+	subsets: ["latin"],
+	variable: "--font-montserrat",
+	weight: ["300", "400", "500", "600", "700"],
+});
 
 export const viewport = {
 	// Will use the primary color of your theme to show a nice theme color in the URL bar of supported browsers
@@ -23,7 +28,7 @@ export default function RootLayout({ children }) {
 		<html
 			lang="en"
 			data-theme={config.colors.theme}
-			className={font.className}
+			className={`${font.className} ${montserrat.variable}`}
 		>
 			<body>
 				<CustomCursor />

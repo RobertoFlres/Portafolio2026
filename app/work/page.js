@@ -12,7 +12,7 @@ export default function WorkPage() {
       <main className="bg-[#141414] text-[#ece8e0] min-h-screen pt-20">
         <div className="max-w-7xl mx-auto px-8 py-16">
           <div className="flex justify-between items-start mb-16">
-            <p className="font-[Montserrat] font-normal text-white text-base md:text-lg max-w-md leading-relaxed">
+            <p className="font-montserrat font-normal text-white text-base md:text-lg max-w-md leading-relaxed">
               Branding, identidad visual y diseño digital proyectos construidos con propósito
             </p>
             <span className="text-white text-4xl inline-block rotate-[120deg]">→</span>
@@ -28,7 +28,7 @@ export default function WorkPage() {
                 <h3 className="font-[Helvetica_Now] font-bold text-[#ece8e0] text-lg mt-4">
                   {project.title}
                 </h3>
-                <p className="font-[Montserrat] font-light text-[#aba8a3] text-sm mt-1">
+                <p className="font-montserrat font-light text-[#aba8a3] text-sm mt-1">
                   {project.category}
                 </p>
               </a>
