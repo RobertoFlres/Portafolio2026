@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
       </div>
       <h2 className="font-[Helvetica_Now] font-black text-[#ece8e0] w-full text-center text-[13.5vw] leading-none">
-        roberto flores
+        Roberto flores
       </h2>
       <div className="mx-4 md:mx-8 mt-6 border-t border-[#333]" />
       <p className="font-[Montserrat] font-light text-[#aba8a3] text-sm text-left px-4 md:px-8 mt-6">
