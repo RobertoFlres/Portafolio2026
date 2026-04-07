@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Servicios = () => {
   return (
@@ -18,14 +19,15 @@ const Servicios = () => {
 
       <div className="px-4 md:px-8 mt-16 md:mt-24">
         {[
-          { label: "NAMING · LOGO · SISTEMA VISUAL", title: "IDENTIDAD DE MARCA", image: "/images/portadap4.jpg" },
-          { label: "ESTRATEGIA · IDENTIDAD · APLICACIONES", title: "BRANDING COMPLETO", image: "/images/portadap3.jpg" },
-          { label: "REDES SOCIALES · PIEZAS GRÁFICAS · CONTENIDO", title: "DISEÑO DIGITAL", image: "/images/portadap1.png" },
-          { label: "INTERFACES · SITIOS WEB · DISEÑO DE PRODUCTO", title: "UI & WEB", image: "/images/portadap2.png" },
+          { label: "NAMING · LOGO · SISTEMA VISUAL", title: "IDENTIDAD DE MARCA", image: "/images/portadap4.jpg", href: "/work/space-apps-cuu" },
+          { label: "ESTRATEGIA · IDENTIDAD · APLICACIONES", title: "BRANDING COMPLETO", image: "/images/portadap3.jpg", href: "/work/orbix" },
+          { label: "REDES SOCIALES · PIEZAS GRÁFICAS · CONTENIDO", title: "DISEÑO DIGITAL", image: "/images/portadap1.png", href: "/work/chihuahua-tech-week-2025" },
+          { label: "INTERFACES · SITIOS WEB · DISEÑO DE PRODUCTO", title: "UI & WEB", image: "/images/portadap2.png", href: "/work/kia-hg" },
         ].map((item, i) => (
-          <div
+          <Link
             key={i}
-            className="group py-4 md:py-6 flex items-center justify-between cursor-pointer relative"
+            href={item.href}
+            className="group py-4 md:py-6 flex items-center justify-between cursor-pointer relative block"
           >
             <div className="absolute bottom-0 left-0 w-full h-[1px] bg-[#333]" />
             <div className="absolute bottom-0 left-0 h-[1px] bg-white w-0 group-hover:w-full transition-all duration-700 ease-out" />
@@ -46,7 +48,7 @@ const Servicios = () => {
               />
             </div>
             <span className="text-white text-xl md:text-2xl lg:text-3xl relative z-10 inline-block transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-4">→</span>
-          </div>
+          </Link>
         ))}
         <div className="border-t border-[#333]" />
       </div>

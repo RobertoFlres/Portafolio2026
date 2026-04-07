@@ -6,10 +6,10 @@ const CTA = () => {
           ESCRÍBEME SI ESTÁS LISTO PARA CONSTRUIR ALGO QUE SE VEA GRANDE.
         </h2>
         <a
-          href="mailto:hola@robertoflores.com"
+          href="mailto:roberto24flores@gmail.com"
           className="font-[RealHeadPro-SemiLight] text-white text-2xl md:text-4xl lg:text-7xl uppercase mt-3 inline-block hover:underline underline-offset-8 transition-all duration-300 break-all md:break-normal"
         >
-          HOLA@ROBERTOFLORES.COM
+          ROBERTO24FLORES@GMAIL.COM
         </a>
       </div>
     </section>

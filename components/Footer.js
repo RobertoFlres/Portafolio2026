@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="w-full bg-[#141414] pb-10 overflow-hidden">
       <div className="px-4 md:px-8 pb-8 flex flex-col md:flex-row justify-between gap-8">
         <ul className="font-montserrat font-light text-[#ece8e0] text-sm md:text-base leading-relaxed space-y-1">
-          <li>email: hola@robertoflores.com</li>
+          <li>email: roberto24flores@gmail.com</li>
           <li>based in: Chihuahua, Mexico</li>
           <li>disponible para: Proyectos Freelancer & Full-Time</li>
         </ul>
